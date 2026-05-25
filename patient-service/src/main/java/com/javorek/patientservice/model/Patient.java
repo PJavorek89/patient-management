@@ -3,6 +3,8 @@ package com.javorek.patientservice.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
+import org.hibernate.annotations.UuidGenerator;
+
 import java.time.LocalDate;
 import java.util.UUID;
 
@@ -10,7 +12,8 @@ import java.util.UUID;
 public class Patient {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue
+    @UuidGenerator
     private UUID id;
 
     @NotNull
