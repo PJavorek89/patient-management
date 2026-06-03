@@ -22,4 +22,5 @@ INSERT INTO patient (id, name, email, address, date_of_birth, registered_date) V
     ('550e8400-e29b-41d4-a716-446655440011', 'Julia Walker', 'julia.walker@example.com', '369 Cypress St', '1993-10-07', '2023-01-12'),
     ('550e8400-e29b-41d4-a716-446655440012', 'Kevin Hall', 'kevin.hall@example.com', '258 Chestnut St', '1984-03-29', '2023-01-13'),
     ('550e8400-e29b-41d4-a716-446655440013', 'Laura Allen', 'laura.allen@example.com', '147 Willow St', '1991-07-04', '2023-01-14'),
-    ('550e8400-e29b-41d4-a716-446655440014', 'Michael Young', 'michael.young@example.com', '369 Poplar St', '1979-11-11', '2023-01-15');
+    ('550e8400-e29b-41d4-a716-446655440014', 'Michael Young', 'michael.young@example.com', '369 Poplar St', '1979-11-11', '2023-01-15')
+    ON CONFLICT DO NOTHING;
